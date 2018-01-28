@@ -23,6 +23,7 @@ This is the Matlab version source codes for the CRISPR/Cas9 system off-target si
     2.1 preparing the input files
        we use the genome wide candidate off-target site sequences of a given sgRNA on-target site sequence as
        the input of the tool. Users can prepare the input candidate off-target site sequences by two ways:
+       
        A. from the web tool Cas-OFFinder: http://www.rgenome.net/cas-offinder/
           parameters: 
 
