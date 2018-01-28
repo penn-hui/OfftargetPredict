@@ -56,17 +56,22 @@ This is the Matlab version source codes for the CRISPR/Cas9 system off-target si
          [predict_results,off_targets]=OfftargetPredict(sgSeq, filepath, type, paralell);
 
       There are four inputs:
-         sgSeq --- string: is the 23nt on-target site sequence (20nt protospacer + 3nt PAM )
-         filepath --- string: the complete filepath of the previous prepared candidate off-target site sequence
+      
+         sgSeq --- string: is the 23nt on-target site sequence (20nt protospacer + 3nt PAM );
+         
+         filepath --- string: the complete filepath of the previous prepared candidate off-target site sequence;
+         
          type --- integer: to be 1 or 2, where 1 means the input candidate off-target sites are obtained with the online web tool;
                            2 means the candidate off-target sites are obtained with the offline software. This parameter
-         paralell --- integer: to be 1 or 0, whether use the paralell computing to speed up the prediction
+         
+         paralell --- integer: to be 1 or 0, whether use the paralell computing to speed up the prediction;
                                if paralell==1, then the paralell computing will be applied, otherwise the traditional computing
-                               is used
+                               is used.
 
       There are two outputs:
+      
          predict_results: the predicted scores that show the prabability of a candidate site to be a real off-target site
-                          0.5 is the threshold for label the candidate sites, where score>0.5 will be labeled as '1', otherwise '0'
+                          0.5 is the threshold for label the candidate sites, where score>0.5 will be labeled as '1', otherwise '0';
                           
          off_targets: the list of all the predicted off-target sites with the position information
 
@@ -92,8 +97,9 @@ Example command (under the working filefold that contain the .m files):
                  [predict_results,off_targets]=OfftargetPredict('AGGCACCGAGCTGTATGGTGTGG', 'example_input_files\offline_input.txt', 2, 1);
 
 
-##############################################################################################################################################
-##############################################################################################################################################
+########################################################################################################################################
+########################################################################################################################################
+
 Please contact Hui Peng: Hui.Peng-2@student.uts.edu.au if you encounter some problems when run the codes.
 
        
