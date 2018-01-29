@@ -7,15 +7,21 @@ This is the Matlab version source codes for the CRISPR/Cas9 system off-target si
 1. About the files
 
    There are three source code files that their file names contain the suffix of '.m':
+   
       OfftargetPredict.m -- the main code for the prediction
+      
       CandidateRead.m -- the code for reading the input candidate off-target site sequences
                          and other information
+                         
       OnOffFea2.m -- the code for exracting feature vectors for characterizing a given on-target-
                      off-target site sequence pair
    
    The file Models.mat is the trained ensemble svm models.
+   
    The file folder "example_input_files" gives two example input files where:
+   
       offline_input.txt -- is the file that obtained from the offline software 'Cas-OFFinder'
+      
       online_input.txt -- is an example file obtained from the website 'http://www.rgenome.net/cas-offinder/'
 
 **********************************************************************************************
