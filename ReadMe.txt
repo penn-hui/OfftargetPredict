@@ -70,7 +70,7 @@ run the codes. For example:
      cd python
      python OfftargetPredict.py AGGCACCGAGCTGTATGGTGTGG 2 example_input_files/offline_input.txt   
 
-(please pay attention on the path character ‘/’ on linux os and ‘\’ on windows os)
+(please pay attention on the path character â€˜/â€™ on linux os and â€˜\â€™ on windows os)
 
 Then, you can find the .csv file in the folder: python/predicted_results/ predict_results.csv
 More details about how to run the python codes can be found in the ReadMe.txt file under the python folder
@@ -80,9 +80,10 @@ Download the codes and decompress the files, then open a Matlab software (Matlab
 matlab/ into the working path. Then run the prediction command. For example:
      
       [predict_results,off_targets]=OfftargetPredict('AGGCACCGAGCTGTATGGTGTGG', 'example_input_files/offline_input.txt', 2, 1);   
+
 The output variable off-targets lists the predicted off-target sites
 
-(please pay attention on the path character ‘/’ on linux os and ‘\’ on windows os)
+(please pay attention on the path character â€˜/â€™ on linux os and â€˜\â€™ on windows os)
 More details about how to run the python codes can be found in the ReadMe.txt file under the matlab/ folder
 
 ###############################################################################################################################
